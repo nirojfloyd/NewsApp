@@ -1,5 +1,7 @@
 package com.example.newsapp;
 
+//TODO: Design the layout of app
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
