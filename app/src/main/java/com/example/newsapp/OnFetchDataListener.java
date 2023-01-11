@@ -4,7 +4,7 @@ import com.example.newsapp.Models.NewsHeadlines;
 
 import java.util.List;
 
-public abstract class OnFetchDataListener {
+public interface OnFetchDataListener<NewsApiResponse> {
     void onFetchData(List<NewsHeadlines> list, String message);
     void onError(String message);
 
