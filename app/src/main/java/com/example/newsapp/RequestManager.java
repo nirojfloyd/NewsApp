@@ -33,7 +33,7 @@ public class RequestManager {
                 @Override
                 public void onResponse(Call<NewsApiResponse> call, Response<NewsApiResponse> response) {
 
-                    if(response.isSuccessful()){
+                    if(!response.isSuccessful()){
                         Toast.makeText(context, "Error!!", Toast.LENGTH_SHORT).show();
                     }
 
