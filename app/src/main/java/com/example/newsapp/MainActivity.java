@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
     public void onClick(View view) {
         Button button= (Button) view;
         String category=button.getText().toString();
-        dialog.setTitle("Fetching News Articles of"+ category);
+        dialog.setTitle("Fetching News Articles of "+ category);
         dialog.show();
         RequestManager manager=new RequestManager(this);
         manager.getNewsHeadlines(listener,category,null);
